@@ -114,7 +114,7 @@
     white-space: nowrap;
   }
 
-  .hero { padding: 42px 0 28px; }
+  .hero { padding: 64px 0 28px; scroll-margin-top: 110px; }
   .hero-card {
     position: relative;
     overflow: hidden;
@@ -215,6 +215,7 @@
     box-shadow: 0 18px 42px rgba(0,0,0,0.34);
   }
   .card h2, .card h3 { margin: 0 0 10px; line-height: 1.15; }
+  .grid-3 .card { text-align: center; }
   .card h3 { font-size: 1.25rem; color: #fff; }
   .card p { margin: 0; color: var(--text-muted); }
   .icon-burst { font-size: 1.7rem; margin-bottom: 10px; }
@@ -304,6 +305,56 @@
   .squad-table tr:hover { background: rgba(255,255,255,0.025); }
   .highlight-row { color: var(--gold); font-weight: 750; }
 
+
+  .feature-strip {
+    background: linear-gradient(145deg, rgba(13,21,39,0.88), rgba(5,8,17,0.92));
+    border: 1px solid rgba(255, 215, 0, 0.18);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.38);
+  }
+  .feature-strip img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .feature-strip-copy {
+    padding: 18px 22px 22px;
+    text-align: center;
+    color: var(--text-muted);
+  }
+  .cta-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  .text-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 850;
+    letter-spacing: 0.01em;
+    background: linear-gradient(135deg, rgba(255,215,0,0.18), rgba(255,153,51,0.16));
+    border: 1px solid rgba(255, 215, 0, 0.34);
+    color: #fff;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .text-cta:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0,255,65,0.55);
+    box-shadow: 0 0 22px rgba(0,255,65,0.14);
+  }
+  .inline-cta {
+    margin-top: 18px;
+  }
+
   hr { border: none; border-top: 1px solid rgba(0, 76, 153, 0.24); margin: 38px 0; }
   .legal-section h3 { font-size: 15px; color: var(--gold); margin-top: 24px; margin-bottom: 8px; font-weight: 700; }
   .legal-subtitle { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--saffron); margin-bottom: 24px; }
@@ -324,7 +375,7 @@
     .nav { min-height: 68px; }
     .brand-sub { display: none; }
     .pill { font-size: 0.62rem; padding: 7px 9px; }
-    .hero { padding-top: 26px; }
+    .hero { padding-top: 38px; }
     .hero-card { border-radius: 20px; }
     .cta-row { align-items: flex-start; }
     .play-badge img { height: 39px; }
@@ -365,23 +416,38 @@
         </div>
       </div>
     </div>
+    <div class="cta-center">
+      <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="text-cta" target="_blank" rel="noopener">Pre-register on Google Play</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="feature-strip">
+      <img src="webassets/feature.png" alt="Cricket Crypto Pro feature overview" class="feature-image">
+      <div class="feature-strip-copy">
+        See the core loop at a glance: squad building, Run Rate boosts, collectible cards, and the road to your free Net Bowler on launch day.
+        <div class="cta-center">
+          <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="play-badge" target="_blank" rel="noopener">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Pre-register on Google Play">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="text-cta" target="_blank" rel="noopener">Pre-register now</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section">
     <h2 class="section-heading">Built for the <span>Dressing Room</span></h2>
     <div class="grid-3">
       <div class="card">
-        <div class="icon-burst">🏏</div>
         <h3>Build Your Squad</h3>
         <p>Activate roles from Net Bowler to Team Captain. Each squad move lifts your Run Rate and keeps the board ticking.</p>
       </div>
       <div class="card">
-        <div class="icon-burst">⚡</div>
         <h3>Stack Real Satoshis</h3>
         <p>Earn sats through gameplay loops, rewarded activations, and limited-time events. Withdrawals use supported Bitcoin wallet rails when available.</p>
       </div>
       <div class="card">
-        <div class="icon-burst">🃏</div>
         <h3>Mint Player Cards</h3>
         <p>Every activation can mint a collectible cricket card, from common squad roles to rare Captain pulls.</p>
       </div>
@@ -399,6 +465,9 @@
           <div><strong>Matchday Boxes:</strong> timed reward moments during cricket season.</div>
           <div><strong>Community Sweet Box:</strong> share sats with the active squad during special events.</div>
           <div><strong>Festival Skins:</strong> limited celebrations like the Diwali Button, with broader event packs designed for the full region.</div>
+        </div>
+        <div class="inline-cta">
+          <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="text-cta" target="_blank" rel="noopener">Join pre-registration</a>
         </div>
       </div>
       <div class="seal-stack" aria-hidden="true">
@@ -437,11 +506,14 @@
         <p>Prestige Tier</p>
       </div>
     </div>
+    <div class="cta-center">
+      <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="text-cta" target="_blank" rel="noopener">Pre-register before launch</a>
+    </div>
   </section>
 
   <section class="section">
     <div class="card">
-      <h2 style="margin-top:0;"><span>⚡</span> Squad Lineup & Run Rate Allocation</h2>
+      <h2 style="margin-top:0;">Squad Lineup & Run Rate Allocation</h2>
       <p style="color:var(--text-muted); margin-top:0;">Optimize your active lineup configuration to scale your hourly rewards performance:</p>
       <table class="squad-table">
         <thead>
@@ -471,13 +543,19 @@
       <div class="shot"><img src="webassets/screenshot-3.png" alt="Cricket Crypto Pro card collection"></div>
       <div class="shot"><img src="webassets/screenshot-4.png" alt="Cricket Crypto Pro wallet and vault preview"></div>
     </div>
+    <div class="cta-center">
+      <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="text-cta" target="_blank" rel="noopener">Pre-register and claim your free Net Bowler</a>
+    </div>
   </section>
 
   <section class="section">
     <div class="card">
-      <h2 style="margin-top:0;"><span>🪔</span> Community Sweet Box</h2>
+      <h2 style="margin-top:0;">Community Sweet Box</h2>
       <p>During special events, players can share sats with the active squad in one tap. Festival drops, matchday moments, and community boxes turn rewards into something the whole dressing room can feel.</p>
       <p style="color:var(--text-muted); margin-top:14px;">Examples include Diwali Button style celebrations, tournament boxes, and broader matchday reward events for cricket fans across the region.</p>
+      <div class="cta-center">
+        <a href="https://play.google.com/store/apps/details?id=com.beefour.cricketcrypto" class="text-cta" target="_blank" rel="noopener">Pre-register now</a>
+      </div>
     </div>
   </section>
 
@@ -566,7 +644,6 @@
 </main>
 
 <footer>
-  <div class="footer-icon">🏏</div>
   <p>© 2026 Cricket Crypto., a division of Bee Four Inc. All rights reserved.</p>
   <p>Bitcoin and the Lightning Network operate independently of Cricket Crypto Inc.</p>
 </footer>
